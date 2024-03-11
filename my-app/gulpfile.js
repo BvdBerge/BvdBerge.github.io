@@ -1,5 +1,8 @@
-const gulp = require('gulp');
+const { series, parallel } = require('gulp');
 
-gulp.task('default', function() {
+function defaultTask(cb) {
   // Define your tasks here
-});
+  cb();
+}
+
+exports.default = defaultTask;
